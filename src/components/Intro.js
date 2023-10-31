@@ -4,8 +4,8 @@ import TestimonialCard from "./TestimonialCard";
 import CohortImage from "../static/cohorts.png";
 import logo from "../static/logo.svg";
 import { testimonials } from "../constant";
-import { GoBell } from "react-icons/go";
 import { IoEye } from "react-icons/io5";
+import bellIcon from "../static/bell.svg";
 
 export default function Intro() {
   return (
@@ -13,8 +13,8 @@ export default function Intro() {
       <div className="space-y-2 py-6">
         <div className="flex gap-2 pl-16">
           <div className="w-[322px] flex flex-col gap-1">
-            <button className="text-start">
-              <GoBell fontSize={25} />
+            <button>
+              <img className="h-[25px" src={bellIcon} alt="bell" />
             </button>
             <h6 className="text-[25px] text-white">
               Get notified when a highly correlated whale makes a move
@@ -25,8 +25,6 @@ export default function Intro() {
             </p>
           </div>
           <div className="flex space-x-2 overflow-auto ml-6 w-[60%]">
-            <NotificationCard />
-            <NotificationCard />
             <NotificationCard />
           </div>
         </div>

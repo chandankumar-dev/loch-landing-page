@@ -15,7 +15,7 @@ export default function useEmailValidation(email) {
     if (isValidEmail(email)) {
       console.log("The email is valid");
     } else {
-      setError("Email is invalid");
+      setError("Please enter a valid email");
     }
   };
   return { error, handleSubmit };
