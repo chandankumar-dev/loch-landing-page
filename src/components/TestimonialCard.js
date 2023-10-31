@@ -1,16 +1,13 @@
 import React from "react";
 
-export default function TestimonialCard() {
+export default function TestimonialCard({ name, position, description }) {
   return (
-    <div className="bg-white h-[100px] min-w-[250px] rounded-lg text-sm p-2">
+    <div className="bg-white h-[100px] min-w-[250px] rounded-lg text-sm p-2 overflow-auto">
       <div>
-        <span className="font-semibold mr-2">Jack F</span>
-        <span className="text-[10px] text-gray-400">Ex Blackrock PM</span>
+        <span className="font-semibold mr-2">{name}</span>
+        <span className="text-[10px] text-gray-400">{position}</span>
       </div>
-      <p className="mt-1">
-        “Love how Loch integrates portfolio analytics and whale watching into
-        one unified app.”
-      </p>
+      <p className="mt-1">{description}</p>
     </div>
   );
 }

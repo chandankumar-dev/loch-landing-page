@@ -1,27 +1,13 @@
 import React, { useState } from "react";
+import useEmailValidation from "../hooks/useEmailValidation";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(null);
 
-  function isValidEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    setError(null);
-
-    if (isValidEmail(email)) {
-      console.log("The email is valid");
-    } else {
-      setError("Email is invalid");
-    }
-  };
+  const { error, handleSubmit } = useEmailValidation(email);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center shadow-5xl shadow-black">
       <div className="max-w-sm flex flex-col gap-3 px-5">
         <h3 className="text-[40px] text-gray-400">
           Sign up for exclusive access.

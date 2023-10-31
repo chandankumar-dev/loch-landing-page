@@ -1,10 +1,11 @@
 import React from "react";
-import { GoBell } from "react-icons/go";
-import { IoEye } from "react-icons/io5";
 import NotificationCard from "./NotificationCard";
 import TestimonialCard from "./TestimonialCard";
 import CohortImage from "../static/cohorts.png";
 import logo from "../static/logo.svg";
+import { testimonials } from "../constant";
+import { GoBell } from "react-icons/go";
+import { IoEye } from "react-icons/io5";
 
 export default function Intro() {
   return (
@@ -33,7 +34,7 @@ export default function Intro() {
           <img
             src={CohortImage}
             alt="cohort"
-            className="w-[250px] rounded-lg"
+            className="w-[250px] rounded-lg relative top-5"
           />
           <div className="ml-10">
             <button>
@@ -52,12 +53,11 @@ export default function Intro() {
           <h3 className="text-2xl text-white text-right">Testimonials</h3>
           <hr className="my-4 md:my-5" />
         </div>
-        <div className="flex space-x-2 overflow-auto pl-8">
+        <div className="flex overflow-x-auto space-x-2 pl-16">
           <img src={logo} alt="logo" className="mx-2" />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
+          {testimonials.map((testimonial) => {
+            return <TestimonialCard key={testimonial.id} {...testimonial} />;
+          })}
         </div>
       </div>
     </div>

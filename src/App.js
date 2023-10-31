@@ -4,7 +4,9 @@ import Signup from "./components/Signup";
 function App() {
   return (
     <div className="max-w-screen-2xl w-screen h-screen mx-auto flex">
-      <Intro />
+      <div className="hidden xl:flex">
+        <Intro />
+      </div>
       <Signup />
     </div>
   );
