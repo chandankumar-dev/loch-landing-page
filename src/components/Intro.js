@@ -50,7 +50,7 @@ export default function Intro() {
         </div>
         <div className="px-16">
           <h3 className="text-2xl text-white text-right">Testimonials</h3>
-          <hr className="my-2 md:my-5" />
+          <hr className="my-4 md:my-5" />
         </div>
         <div className="flex space-x-2 overflow-auto pl-8">
           <img src={logo} alt="logo" className="mx-2" />
