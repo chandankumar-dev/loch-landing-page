@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function useEmailValidation(email) {
   const [error, setError] = useState(null);
@@ -14,6 +14,7 @@ export default function useEmailValidation(email) {
 
     if (isValidEmail(email)) {
       console.log("The email is valid");
+      window.open("https://app.loch.one/welcome", "_blank");
     } else {
       setError("Please enter a valid email");
     }
