@@ -2,7 +2,6 @@ import React from "react";
 import barChartIcon from "../static/bar-chart.svg";
 import bellIcon from "../static/bell.svg";
 import clockIcon from "../static/clock.svg";
-import checkmarkIcon from "../static/checkmark.svg";
 
 export default function NotificationCard() {
   return (
@@ -26,9 +25,7 @@ export default function NotificationCard() {
           <button>
             <img className="h-[25px]" src={barChartIcon} alt="barChartIcon" />
           </button>
-          <button>
-            <img className="h-[15px]" src={checkmarkIcon} alt="bell" />
-          </button>
+          <input type="checkbox" checked />
         </div>
         <h5 className="text-sm">Notify me when any wallets move more than</h5>
         <span className="text-[12px] bg-gray-200 w-20 text-center rounded-sm">
@@ -40,9 +37,7 @@ export default function NotificationCard() {
           <button>
             <img className="h-[25px]" src={clockIcon} alt="bell" />
           </button>
-          <button>
-            <img className="h-[15px]" src={checkmarkIcon} alt="bell" />
-          </button>
+          <input type="checkbox" checked />
         </div>
         <h5 className="text-sm">Notify me when any wallet dormant for</h5>
         <span className="text-[12px] bg-gray-200 w-20 text-center rounded-sm">
@@ -54,9 +49,7 @@ export default function NotificationCard() {
           <button>
             <img className="h-[25px]" src={clockIcon} alt="bell" />
           </button>
-          <button>
-            <img className="h-[15px]" src={checkmarkIcon} alt="bell" />
-          </button>
+          <input type="checkbox" checked />
         </div>
         <h5 className="text-sm">Notify me when any wallet dormant for</h5>
         <span className="text-[12px] bg-gray-200 w-20 text-center rounded-sm">
