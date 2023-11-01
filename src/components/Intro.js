@@ -1,7 +1,7 @@
 import React from "react";
 import NotificationCard from "./NotificationCard";
 import TestimonialCard from "./TestimonialCard";
-import CohortImage from "../static/cohorts.png";
+import CohortImage from "../static/cohort.svg";
 import logo from "../static/logo.svg";
 import { testimonials } from "../constant";
 import { IoEye } from "react-icons/io5";
@@ -32,7 +32,7 @@ export default function Intro() {
           <img
             src={CohortImage}
             alt="cohort"
-            className="w-[250px] rounded-lg relative top-5"
+            className="w-[245px] rounded-lg relative top-5"
           />
           <div className="ml-10">
             <button>
