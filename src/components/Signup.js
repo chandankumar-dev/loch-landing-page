@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../static/logo.svg";
 import useEmailValidation from "../hooks/useEmailValidation";
 
 export default function Signup() {
@@ -9,6 +10,11 @@ export default function Signup() {
   return (
     <div className="w-full flex flex-col justify-center items-center shadow-5xl shadow-black">
       <div className="max-w-sm flex flex-col gap-3 px-5">
+        <img
+          className="h-[100px] w-[100px] bg-black rounded-lg"
+          src={logo}
+          alt="bell"
+        />
         <h3 className="text-[40px] text-gray-400">
           Sign up for exclusive access.
         </h3>
