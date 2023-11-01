@@ -4,8 +4,8 @@ import TestimonialCard from "./TestimonialCard";
 import CohortImage from "../static/cohort.svg";
 import logo from "../static/logo.svg";
 import { testimonials } from "../constant";
-import { IoEye } from "react-icons/io5";
 import bellIcon from "../static/bell.svg";
+import eyeIcon from "../static/eye.svg";
 
 export default function Intro() {
   return (
@@ -36,7 +36,7 @@ export default function Intro() {
           />
           <div className="ml-10">
             <button>
-              <IoEye fontSize={25} className="text-white" />
+              <img className="h-[25px" src={eyeIcon} alt="bell" />
             </button>
             <h5 className="text-3xl text-white">
               Watch what the whales are doing
